@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data>
+       <!-- QWeb Reports -->
+       <record id="account_invoices_zakat_tax_authority" model="ir.actions.report">
+           <field name="name">Tax Invoices</field>
+           <field name="model">account.move</field>
+           <field name="report_type">qweb-pdf</field>
+           <field name="report_name">zakat_report_invoice.report_invoice_zakat_tax_authority</field>
+           <field name="report_file">zakat_report_invoice.report_invoice_zakat_tax_authority</field>
+           <field name="print_report_name">(object._get_report_base_filename())</field>
+           <field name="binding_model_id" ref="account.model_account_move"/>
+           <field name="binding_type">report</field>
+       </record>
+
+       <!-- <record id="account_Credit_invoices_zakat_tax_authority" model="ir.actions.report">
+           <field name="name">Credit Tax Invoices</field>
+           <field name="model">account.move</field>
+           <field name="report_type">qweb-pdf</field>
+           <field name="report_name">zakat_report_invoice.report_invoice_zakat_tax_authority</field>
+           <field name="report_file">zakat_report_invoice.report_invoice_zakat_tax_authority</field>
+           <field name="print_report_name">(object._get_report_base_filename())</field>
+           <field name="binding_model_id" ref="account.model_account_move"/>
+           <field name="binding_type">report</field>
+       </record> -->
+   </data>
+</odoo>
